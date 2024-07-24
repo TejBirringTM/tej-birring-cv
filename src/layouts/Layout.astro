@@ -3,10 +3,10 @@ import "../styles/base.css"
 import { AstroFont } from "astro-font";
 
 interface Props {
-	title?: string;
+	pageTitle?: string;
 }
 
-const { title } = Astro.props;
+const { pageTitle } = Astro.props;
 ---
 
 <!doctype html>
@@ -17,7 +17,7 @@ const { title } = Astro.props;
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>{ title ? `Tej Birring CV – ${title}` : 'Tej Birring CV'}</title>
+		<title>{ pageTitle ? `Tej Birring's CV – ${pageTitle}` : `Tej Birring's CV`}</title>
 		<!-- Fonts -->
 		<AstroFont
 		config={[
