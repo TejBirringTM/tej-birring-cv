@@ -1,0 +1,10 @@
+---
+import { getEntry } from "astro:content";
+const personalStatement = await getEntry("general", "personal-statement");
+import { marked } from 'marked';
+import SectionHeading from "./SectionHeading.astro";
+---
+<section>
+    <SectionHeading title="Personal Statement" />
+    <div set:html={marked(personalStatement.body)} class="prose prose-sm text-secondary leading-tight" />
+</section>

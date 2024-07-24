@@ -1,0 +1,1 @@
+Dynamic software engineer with comprehensive expertise in full-stack development. Excels at architecting robust web applications and crafting efficient, scalable backend solutions. Leverages strong problem-solving skills and technical proficiency to deliver innovative, user-centric software products.

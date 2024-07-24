@@ -1,0 +1,28 @@
+---
+import {type Skill} from "../../data/configuration";
+
+interface Props {
+    skill: Skill,
+    level: number
+}
+
+const {skill, level} = Astro.props;
+---
+
+<div class={`${level === 1 ? 'font-semibold not-first:mt-4' : 'font-normal'}`}>
+    <p class={`${level === 1 ? 'leading-none mb-2' : 'leading-none'}`}>
+        {level > 1 ? '◗' : ''}
+        {skill.label}
+    </p>
+    <div>
+        {
+            skill.children && skill.children.map((s)=>(
+                <div class={`${level >= 1 ? 'ml-3 my-1.5' : 'ml-0'} text-sm`}>
+                    <Astro.self skill={s} level={level+1} />
+                </div>
+            ))
+        }
+    </div>
+</div>
+
+

@@ -1,0 +1,20 @@
+---
+import config from "@data/configuration"
+import SectionHeading from "./SectionHeading.astro"
+import Skill from "./Skill.astro"
+---
+
+{ 
+    config.skills && 
+    <section>
+        <SectionHeading title="Skills" />
+        <div>
+        {
+            config.skills.map((skill)=>(
+                <Skill skill={skill} level={1} />
+            ))
+        }
+        </div>
+    </section>
+}
+

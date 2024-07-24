@@ -1,0 +1,24 @@
+---
+import { Icon } from 'astro-icon/components'
+
+interface Props {
+    icon: string,
+    text: string,
+    url?: string,
+    printUrl?: boolean
+}
+
+const {icon, text, url, printUrl} = Astro.props;
+---
+{url ?
+    <a class="flex flex-row items-center" href={url}>
+        <Icon name={icon} class="mr-2 text-xl"/>
+        <span class={printUrl ? 'inline-block print:hidden underline print:no-underline' : 'underline'}>{text}</span>
+        <span class={printUrl ? 'hidden print:inline-block underline' : 'hidden'}>{url}</span>
+    </a> :
+    <div class="flex flex-row items-center">
+        <Icon name={icon} class="mr-2 text-xl"/>
+        <span>{text}</span>
+    </div>
+}
+
