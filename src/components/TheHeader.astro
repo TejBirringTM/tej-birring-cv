@@ -5,9 +5,9 @@ import ThePrintButton from "./ThePrintButton"
 ---
 <header class="px-4 print:px-0 pt-2 print:pt-0 pb-4 mb-4 border-b-2 border-b-tertiary-1">
     <div class="max-w-screen-lg">
-        <div class="flex justify-between items-start">
-            <h1 class="text-5xl font-serif font-medium small-caps mt-2 mb-3">{ config.name }</h1>
-            <ThePrintButton client:load />
+        <div class="flex flex-col sm:flex-row justify-between items-start">
+            <h1 class="text-5xl font-serif font-medium small-caps mt-2 mb-3 tracking-wider">{ config.name }</h1>
+            <ThePrintButton client:load className="mb-4 sm:mb-0" />
         </div>
         <div class="flex flex-col gap-2 sm:flex-row sm:flex-wrap justify-between mb-3">
             {config.location && 
