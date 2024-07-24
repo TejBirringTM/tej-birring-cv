@@ -17,11 +17,11 @@ const professionalExperience = (await getCollection("professional-experience")).
         <div class="space-y-6">
             {professionalExperience.map((exp)=>(
                 <div>
-                    <h3 class="leading-none font-bold mb-1.5">{exp.data.title}</h3>
+                    <h3 class="leading-none font-bold mb-0.5">{exp.data.title}</h3>
 
-                    <div class="ml-3 text-secondary">
-                        <h3 class="leading-none mb-1"><em>at </em> <span class="font-medium">{exp.data.company}</span></h3>
-                        <div class="flex flex-wrap opacity-80 gap-1 mb-2 text-[0.8rem]">
+                    <div class="ml-3">
+                        <h3 class="leading-none text-secondary mb-1"><em>at </em> <span class="font-medium">{exp.data.company}</span></h3>
+                        <div class="flex flex-wrap text-secondary/80 gap-1 mb-2 text-[0.8rem]">
                             <div class="flex flex-row items-center leading-none mr-4">
                                 <Icon name="pin" class="mr-1"/>
                                 {exp.data.location}
@@ -40,7 +40,7 @@ const professionalExperience = (await getCollection("professional-experience")).
                         </div>
                     </div>
 
-                    <div set:html={marked(exp.body)} class="prose prose-sm text-secondary leading-tight" />
+                    <div set:html={marked(exp.body)} class="prose prose-sm text-secondary leading-[1.2] prose-p:m-0 prose-li:mt-2 " />
                 </div>
             ))}         
         </div>

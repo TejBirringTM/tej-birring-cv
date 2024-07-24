@@ -7,3 +7,24 @@
         font-variant: small-caps;
     }
 }
+
+/* 
+To style printed pages:
+
+@page {
+    margin: 1cm;
+}
+@page:first {
+    margin: 0cm;
+}
+@page:last {
+    margin: 5cm;
+}
+@page:left {
+    margin: 2cm 1.5cm 2cm 2cm;
+}
+@page:right {
+    margin: 2cm 2cm 2cm 1.5cm;
+} 
+
+*/
