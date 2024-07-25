@@ -7,15 +7,13 @@ from:
     year: 2023
 to: present
 ---
-* Developed innovative SaaS platform implementing UK's SAP 10.2 dwelling energy assessment model, streamlining the process for architects and energy assessors
+* Developed innovative software as a service (SaaS) platform to streamline the energy assessment of residential construction projects
 
 * Architected comprehensive, user-friendly solution:
-  * Designed efficient database for quick data retrieval
+  * Designed efficient database (DB) for quick data retrieval
   * Built robust calculation engine for accurate assessments
+    * Based on government-issued standards
   * Implemented user-centric design to reduce learning curve
-  * Developed portable web app (PWA) for on-site data collection
 
-* Led end-to-end product development from concept to market launch:
-  * Implemented agile methodologies for rapid development and
-  iteration
-  * Integrated automated testing to ensure calculation accuracy and reliability
+* Led end-to-end product development from concept to market launch
+  * Paired agile methodologies with advanced analytics and user feedback to enable rapid iterative design and development

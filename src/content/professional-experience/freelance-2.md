@@ -1,5 +1,5 @@
 ---
-title: Full Stack Software Developer
+title: Full-Stack Web Developer
 company: Freelance
 location: Remote
 from: 
@@ -9,3 +9,6 @@ to:
     month: 7
     year: 2022
 ---
+* Same as previous freelance role, noteable projects include:
+
+  * Development of an on-demand video-streaming platform for higher education tutoring, using Notion as the user-facing content management system (CMS) and database (DB)

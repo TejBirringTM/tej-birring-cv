@@ -15,7 +15,8 @@ to:
 
   * Conducted in-depth software stack analysis
   * Performed system integration and optimisation
-  * Developed native applications using C/C++ and Java (Android Run Time [ART])
+  * Developed low-level system software using C and C++
+  * Developed high-level software (application framework and applications) for Android Run Time (ART) using Java
 
 * Established and maintained CI/CD infrastructure for AOSP-based projects, including Android TV
 
