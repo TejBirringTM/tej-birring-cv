@@ -12,7 +12,7 @@ to: present
 * Architected comprehensive, user-friendly solution:
   * Designed efficient database (DB) for quick data retrieval
   * Built robust calculation engine for accurate assessments
-    * Based on latest government-issued standards
+    * Conforms to latest government-issued standards
   * Implemented user-centric design to reduce learning curve
 
 * Led end-to-end product development from concept to market launch
