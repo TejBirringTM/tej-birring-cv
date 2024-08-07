@@ -9,6 +9,6 @@ to:
     month: 7
     year: 2022
 ---
-* Same as previous freelance role, noteable projects include:
+* Same as previous freelance role, notable projects include:
 
   * Development of an on-demand video-streaming platform for higher education tutoring, using Notion as the user-facing content management system (CMS) and database (DB)
