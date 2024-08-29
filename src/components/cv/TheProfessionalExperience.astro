@@ -18,7 +18,7 @@ const professionalExperience = (await getCollection("professional-experience")).
             {professionalExperience.map((exp)=>(
                 <div>
                     <h3 class="leading-none font-bold mb-0.5 inline-block">{exp.data.title}</h3>
-                    <span class="text-xs bg-secondary text-white rounded-full py-0.5 px-2 ml-2">
+                    <span class="text-xs bg-secondary text-white print:bg-white print:text-secondary print:border-secondary print:border rounded-full py-0.5 px-2 ml-2">
                     { exp.data['contract type'] === 'Contractor' && 
                         "Contract"
                     }
