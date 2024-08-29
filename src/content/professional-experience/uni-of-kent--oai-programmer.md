@@ -10,20 +10,20 @@ to:
     month: 8
     year: 2017
 ---
-Responsible for the software implementation of the 5G testbed at the University of Kent.
+Responsible for the software implementation of the 5G software-defined radio (SDR) testbed at the University of Kent.
 
-* Implemented MAC-PHY functional split of LTE protocol stack using open source software-defined radio (SDR) platforms (OpenAirInterface, srsLTE/srsENB)
+* Analysed and modified large-scale open source codebases for 4G LTE emulation (OpenAirInterface, srsLTE/srsENB)
 
-* Analysed and modified large-scale open source codebases for 4G LTE emulation
+  * Implemented MAC-PHY functional split of LTE protocol stack
 
-* Developed real-time software tools for collecting, processing, and visualising time-sensitive data
+* Developed software tools for collecting, processing, and visualising network performance statistics in realtime
 
-* Designed and implemented LTE MAC/PHY Radio-over-Ethernet (RoE) packet processing for Baseband Unit (BBU) and Remote Radio Unit (RRU)
+  * Quantitatively evaluated Cloud-Radio Access Network (C-RAN) architectures against traditional Distributed-Radio Access Network (D-RAN) systems
 
-* Optimised software for real-time processing on Linux systems, considering thread scheduling and CPU core allocation
+* Designed and implemented LTE MAC/PHY Radio-over-Ethernet (RoE) packet processing for Baseband Unit (BBU) and Remote Radio Unit (RRU)  
 
-* Collaborated on hardware-software architecture for FPGA-based packet processing offloading
+* Optimised software for realtime processing on Linux systems, considering interprocess communication, thread scheduling, CPU core allocation, and more
+
+* Collaborated on hardware-software architecture for offloading packet processing to FPGA-based embedded platform
 
 * Conducted experiments with research partners and supervised MEng students
-
-* Quantitatively evaluated Cloud-Radio Access Network (C-RAN) architectures against traditional Distributed-Radio Access Network (D-RAN) systems
