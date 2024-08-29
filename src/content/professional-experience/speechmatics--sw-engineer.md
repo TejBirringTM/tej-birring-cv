@@ -1,6 +1,7 @@
 ---
 title: Software Engineer
 company: Speechmatics
+contract type: Permanent
 location: Cambridge, UK | Remote
 from: 
     month: 8
@@ -9,6 +10,9 @@ to:
     month: 2
     year: 2023
 ---
+
+Responsible for full-stack development of the **self-service SaaS platform** provisioning realtime speech transcription.
+
 * Implemented robust backend services to encapsulate Speechmatics' machine learning models, enhancing system security, reliability, and performance
 
 * Designed and developed key features to improve user experience, resulting in increased user engagement and retention

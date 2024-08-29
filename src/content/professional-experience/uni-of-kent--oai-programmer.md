@@ -1,6 +1,7 @@
 ---
 title: OpenAirInterface Programmer (Research Assistant)
 company: University of Kent
+contract type: Contractor
 location: Canterbury, UK
 from: 
     month: 7
@@ -9,6 +10,8 @@ to:
     month: 8
     year: 2017
 ---
+Responsible for the software implementation of the 5G testbed at the University of Kent.
+
 * Implemented MAC-PHY functional split of LTE protocol stack using open source software-defined radio (SDR) platforms (OpenAirInterface, srsLTE/srsENB)
 
 * Analysed and modified large-scale open source codebases for 4G LTE emulation
