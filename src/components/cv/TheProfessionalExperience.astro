@@ -5,8 +5,8 @@ import SectionHeading from './SectionHeading.astro';
 import { Icon } from 'astro-icon/components'
 import dayjs from "dayjs"
 const professionalExperience = (await getCollection("professional-experience")).sort((a, b)=>{
-    const dateA = a.data.to === 'present' ? new Date() : new Date(a.data.to.year, a.data.to.month - 1);
-    const dateB = b.data.to === 'present' ? new Date() : new Date(b.data.to.year, b.data.to.month - 1);
+    const dateA = a.data.to === 'Present' ? new Date() : new Date(a.data.to.year, a.data.to.month - 1);
+    const dateB = b.data.to === 'Present' ? new Date() : new Date(b.data.to.year, b.data.to.month - 1);
     return dateB.getTime() - dateA.getTime();
 });
 ---
@@ -17,10 +17,23 @@ const professionalExperience = (await getCollection("professional-experience")).
         <div class="space-y-6">
             {professionalExperience.map((exp)=>(
                 <div>
-                    <h3 class="leading-none font-bold mb-0.5">{exp.data.title}</h3>
+                    <h3 class="leading-none font-bold mb-0.5 inline-block">{exp.data.title}</h3>
+                    <span class="text-xs bg-secondary text-white rounded-full py-0.5 px-2 ml-2">
+                    { exp.data['contract type'] === 'Contractor' && 
+                        "Contract"
+                    }
+                    { exp.data['contract type'] === 'Permanent' && 
+                        "Permanent"
+                    }
+                    { exp.data['contract type'] === 'Founder' && 
+                        "Founder"
+                    }
+                    </span>
 
                     <div class="ml-3">
-                        <h3 class="leading-none text-secondary mb-1"><em>at </em> <span class="font-medium">{exp.data.company}</span></h3>
+                        { exp.data.company && 
+                            <h3 class="leading-none text-secondary mb-1"><em>@ </em> <span class="font-medium">{exp.data.company}</span></h3>
+                        }
                         <div class="flex flex-wrap text-secondary/80 gap-1 mb-2 text-[0.8rem]">
                             <div class="flex flex-row items-center leading-none mr-4">
                                 <Icon name="pin" class="mr-1"/>
@@ -30,11 +43,11 @@ const professionalExperience = (await getCollection("professional-experience")).
                                 <Icon name="calendar" class="mr-1"/>
                                 {dayjs(new Date(exp.data.from.year, exp.data.from.month-1)).format('MMM YYYY')} - 
                                 {
-                                    exp.data.to !== 'present' &&
+                                    exp.data.to !== 'Present' &&
                                     dayjs(new Date(exp.data.to.year, exp.data.to.month-1)).format('MMM YYYY')
                                 }
                                 {
-                                    exp.data.to === 'present' && "Present"
+                                    exp.data.to === 'Present' && "Present"
                                 }
                             </div>
                         </div>
