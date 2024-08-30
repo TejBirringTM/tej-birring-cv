@@ -43,7 +43,7 @@ interface Configuration {
 }
 
 export default {
-    url: "https://cv.tejbirring.com",
+    url: "https://software-engineering.cv.tejbirring.com",
     name: "Tej Birring",
     email: "tejbirring@gmail.com",
     phone: "+44 (0) 7424 680 750",
