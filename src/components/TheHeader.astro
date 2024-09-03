@@ -1,32 +1,23 @@
 ---
 import config from "@data/configuration"
-import TheHeaderDetail from "./TheHeaderDetail.astro"
-import ThePrintButton from "./ThePrintButton"
+import Marquee from "./Marquee.astro"
 ---
-<header class="px-4 print:px-0 pt-2 print:pt-0 pb-4 mb-4 border-b-2 border-b-tertiary-1 max-w-screen-lg">
-    <div class="">
-        <div class="flex flex-col sm:flex-row justify-between items-start">
-            <h1 class="text-5xl font-serif font-medium small-caps mt-2 mb-3 tracking-wider">{ config.name }</h1>
-            <ThePrintButton client:load className="mb-4 sm:mb-0" />
-        </div>
-        <div class="flex flex-col gap-2 sm:flex-row sm:flex-wrap justify-between mb-3">
-            {config.location && 
-                <TheHeaderDetail icon="pin" text={config.location} />
-            }
-            {config.email && 
-                <TheHeaderDetail icon="email" text={config.email} url={`mailto:${config.email}`} />
-            }
-            {config.phone && 
-                <TheHeaderDetail icon="telephone" text={config.phone} />
-            }
-        </div>
-        <div class="flex flex-col gap-2 sm:flex-row sm:flex-wrap justify-around text-sm">
-            {config.onlinePresence.linkedInURL &&
-                <TheHeaderDetail icon="linkedin" text='LinkedIn' url={config.onlinePresence.linkedInURL} printUrl />
-            }
-            {config.onlinePresence.githubURLs.map((gh) => (
-                <TheHeaderDetail icon="github" text={gh.username} url={gh.url} />
-            ))}
-        </div>        
+<header class="print:px-0 pt-2 print:pt-0 pb-4 max-w-screen-lg">
+    <div class="flex flex-col justify-between items-center mb-3">
+        <h1 class="text-5xl sm:text-8xl font-serif font-medium small-caps mt-2 mb-3 tracking-widest text-center">
+            { config.name }
+        </h1>
     </div>
+
+    <Marquee
+    containerClass="bg-tertiary-1 py-1"
+>
+    {
+        config.headlines.map((headline)=>(
+            <span class="px-12">
+                { headline }
+            </span>
+        ))
+    }
+</Marquee>  
 </header>

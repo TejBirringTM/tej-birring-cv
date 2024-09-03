@@ -1,0 +1,42 @@
+---
+interface Props {
+    containerClass?: string,
+    contentClass?: string,
+}
+
+const {containerClass, contentClass} = Astro.props;
+---
+<div class=`wrapper ${containerClass}`>
+    <div class=`scroll ${contentClass}`>
+        <slot />
+    </div>
+</div>
+
+<style scoped>
+    .wrapper {
+        overflow: hidden;
+    }
+
+    @keyframes scroll {
+      from {
+        transform: translateX(0);
+      }
+      to {
+        transform: translateX(calc(-80%));
+      }
+    }
+    
+    .scroll {
+      animation: scroll 30s linear forwards infinite;
+      display: flex;
+      flex-flow: row;
+      will-change: transform;
+      * {
+        flex-shrink: 0;
+      }
+    }
+    
+    .reverse {
+      animation-direction: reverse;
+    }
+</style>

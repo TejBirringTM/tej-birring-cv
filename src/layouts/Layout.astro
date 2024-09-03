@@ -1,6 +1,7 @@
 ---
 import "../styles/base.css"
 import { AstroFont } from "astro-font";
+import config from "../data/configuration"
 
 interface Props {
 	pageTitle?: string;
@@ -17,7 +18,7 @@ const { pageTitle } = Astro.props;
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
-		<title>{ pageTitle ? `Tej Birring's CV – ${pageTitle}` : `Tej Birring's CV`}</title>
+		<title>{ pageTitle ? `${config.name}'s CV – ${pageTitle}` : `${config.name}'s CV`}</title>
 		<!-- Fonts -->
 		<AstroFont
 		config={[
