@@ -15,6 +15,6 @@ import TheHeaderDetail from "./TheHeaderDetail.astro"
     <div class="text-secondary flex flex-col gap-2">
         <TheHeaderDetail text={config.email} icon="email" url=`mailto:${config.email}`/>
         <TheHeaderDetail text={config.phone} icon="telephone" />
-        <TheHeaderDetail text="LinkedIn" icon="linkedin-1" url={config.url} />
+        <TheHeaderDetail text="LinkedIn" icon="linkedin-1" url={config.onlinePresence.linkedInURL} />
     </div>
 </footer>
