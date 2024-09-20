@@ -1,6 +1,7 @@
 ---
 title: Software Engineer
 company: Garrison Technology
+contract type: Permanent
 location: London, UK | Remote
 from: 
     month: 4
@@ -8,6 +9,32 @@ from:
 to:
     month: 9
     year: 2021
+skills:
+    - label: APIs
+      children:
+          - label: Linux Userspace API
+          - label: Linux Kernel API
+          - label: Trusted Execution Environment (TEE)
+    - label: Languages
+      children:
+        - label: C
+        - label: C++
+        - label: Bash
+    - label: Build Systems
+      children:
+        - label: CMake
+        - label: Make
+        - label: Soong
+        - label: Yocto
+        - label: Buildroot
+    - label: Version Control
+      children: 
+      - label: Git
+      - label: Repo
+    - label: Libraries
+      children:
+        - label: Boost (libboost)
+        - label: Bionic (libbionic)
 ---
 
 * Specialised in development and debugging of Linux device drivers for ultra-secure web browsing solution

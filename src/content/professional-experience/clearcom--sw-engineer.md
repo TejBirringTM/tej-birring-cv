@@ -1,6 +1,7 @@
 ---
 title: Software Engineer
 company: HME Clear-Com
+contract type: Permanent
 location: Cambridgeshire, UK
 from: 
     month: 11
@@ -8,6 +9,33 @@ from:
 to:
     month: 12
     year: 2019
+skills:
+    - label: APIs
+      children:
+          - label: Linux Userspace API
+          - label: Linux Kernel API
+          - label: Trusted Execution Environment (TEE)
+    - label: Languages
+      children:
+        - label: C
+        - label: C++
+        - label: Bash
+    - label: Platforms
+      children:
+        - label: Jenkins
+        - label: Bitbucket
+    - label: Build Systems
+      children:
+        - label: CMake
+        - label: Make
+        - label: Yocto
+    - label: Tools
+      children:
+        - label: Crank Storyboard
+    - label: Libraries
+      children:
+        - label: Boost (libboost)
+        - label: QT Embedded
 ---
 * Led integration of custom-manufactured multi-touch thin-film transistor liquid crystal displays (TFT LCDs) into new hardware platform:
   * Developed and integrated I2C touchscreen driver into kernel source tree

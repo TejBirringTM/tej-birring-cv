@@ -1,6 +1,7 @@
 ---
-title: OpenAirInterface Programmer (Research Assistant)
+title: OpenAirInterface Programmer
 company: University of Kent
+contract type: Contractor
 location: Canterbury, UK
 from: 
     month: 7
@@ -8,6 +9,29 @@ from:
 to:
     month: 8
     year: 2017
+skills:
+    - label: APIs
+      children:
+          - label: Linux Userspace API
+    - label: Languages
+      children:
+        - label: C
+        - label: C++
+        - label: MATLAB
+        - label: C#
+        - label: Bash
+    - label: Build Systems
+      children:
+        - label: CMake
+        - label: Make
+    - label: Libraries
+      children:
+        - label: Boost (libboost)
+        - label: Software-Defined Radio (libsdr)
+        - label: OpenAirInterface
+    - label: Version Control
+      children: 
+      - label: Git
 ---
 * Implemented MAC-PHY functional split of LTE protocol stack using open source software-defined radio (SDR) platforms (OpenAirInterface, srsLTE/srsENB)
 

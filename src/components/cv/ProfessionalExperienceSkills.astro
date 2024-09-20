@@ -1,0 +1,27 @@
+---
+import type { Skill } from '@/schemas/Skill';
+
+interface Props {
+    skill: Skill,
+}
+
+const {skill} = Astro.props;
+---
+<div class="text-sm print:text-xs leading-tight print:leading-none">
+    <span class={(skill.children ? 'font-semibold' : '') + ' leading-none'}>{skill.label}</span>
+    {
+        skill.children && (
+            <div class="ml-4">
+                {
+                    skill.children
+                        .sort((a, b)=>a.label.localeCompare(b.label))
+                        .map(
+                            (_skill)=>(
+                                <Astro.self skill={_skill}  />
+                            )
+                        )
+                }
+            </div>
+        )
+    }
+</div>

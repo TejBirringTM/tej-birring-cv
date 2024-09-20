@@ -1,3 +1,5 @@
+import { z } from "astro:content"
+
 export interface Skill {
     label: string,
     children?: Skill[]
@@ -155,100 +157,6 @@ export default {
             ]
         },
         {
-            label: "Programming Languages – by Runtime (RT) Environment",
-            children: [
-                {
-                    label: "Web Browser & Node.js®/Deno/Bun",
-                    children: [
-                        {
-                            label: 'JavaScript/ECMAScript'
-                        },
-                        {
-                            label: 'TypeScript'
-                        }
-                    ]
-                },
-                {
-                    label: "Machine Native",
-                    children: [
-                        {
-                            label: "C"
-                        },
-                        {
-                            label: "C++"
-                        },
-                        {
-                            label: "Go"
-                        },
-                        {
-                            label: "Rust"
-                        }
-                    ]
-                },
-                {
-                    label: "Python"
-                },       
-                {
-                    label: "MATLAB"
-                },                
-                {
-                    label: ".NET Common Language Runtime (CLR)",
-                    children: [
-                        {
-                            label: "C#"
-                        },
-                        {
-                            label: "Visual Basic"
-                        }
-                    ]
-                },                
-            ]
-        },
-        {
-            label: "Markup & Styling Languages",
-            children: [
-                {
-                    label: "HTML"
-                },
-                {
-                    label: "CSS"
-                },
-                {
-                    label: "SASS/SCSS"
-                },
-                {
-                    label: "Markdown (md & mdx)"
-                }
-            ]
-        },
-        {
-            label: "Database Management Systems (DBMS)",
-            children: [
-                {
-                    label: "MySQL, PostgreSQL",
-                    children: [
-                        {
-                            label: "SQL (query language)"
-                        }
-                    ]
-                },
-                {
-                    label: "MongoDB"
-                },
-                {
-                    label: "Neo4j",
-                    children: [
-                        {
-                            label: "Cypher (query language)"
-                        }
-                    ]
-                },
-                {
-                    label: "Redis"
-                }                
-            ]
-        },
-        {
             label: "Tools",
             children: [
                 {
@@ -273,18 +181,7 @@ export default {
                             label: "BitBucket"
                         },
                     ]
-                },
-                {
-                    label: "CI/CD Software",
-                    children: [
-                        {
-                            label: "Jenkins"
-                        },
-                        {
-                            label: "CircleCI"
-                        }
-                    ]
-                },                
+                },           
                 {
                     label: "Design Software",
                     children: [
@@ -303,7 +200,7 @@ export default {
                     ]
                 },
                 {
-                    label: "Maths & Analysis Software",
+                    label: "Maths & Analysis",
                     children: [
                         {
                             label: "Jupyter Notebook"
@@ -317,7 +214,7 @@ export default {
                     ]
                 },                
                 {
-                    label: "Productivity Software",
+                    label: "Productivity",
                     children: [
                         {
                             label: "Google Workspace"
@@ -329,30 +226,10 @@ export default {
                 },
             ]
         },
-        {
-            label: "Cloud Vendors",
-            children: [
-                {
-                    label: "Google Cloud Platform (GCP)"
-                },
-                {
-                    label: "Microsoft Azure"
-                },
-                {
-                    label: "Amazon Web Services (AWS)"
-                },
-                {
-                    label: "DigitalOcean"
-                },
-                {
-                    label: "Heroku"
-                }
-            ]
-        }
     ],
     otherInformation: [
-        "Full clean UK driving license",
         "British citizen",
-        "Native English speaker"
+        "Native English speaker",
+        "Full clean UK driving license",
     ]
 } satisfies Configuration;
