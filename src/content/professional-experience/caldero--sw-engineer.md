@@ -34,18 +34,21 @@ skills:
       children: 
       - label: Git
       - label: Repo
-    - label: Libraries
+
+    - label: Cross-Platform Software Development
       children:
-        - label: Cross-Platform Software Development
+        - label: Libraries
           children:
             - label: Boost (libboost)
             - label: POCO (libpoco)
-        - label: Android Systems Development
+    - label: Android Systems Development
+      children:
+        - label: Libraries
           children:
-          - label: Android Open Source Project (AOSP)
-            children:
-              - label: Android Native Development Kit (NDK)
-              - label: Bionic (libbionic)
+            - label: Android Open Source Project (AOSP)
+              children:
+                - label: Android Native Development Kit (NDK)
+                - label: Bionic (libbionic)
 ---
 * Architected and developed embedded cross-platform software solutions for multiple hardware and software targets, ensuring efficient single codebase management
 
