@@ -18,7 +18,7 @@ const professionalExperience = (await getCollection("professional-experience")).
         <div class="space-y-6">
             {professionalExperience.map((exp)=>(
                 <div>
-                    <div class="bg-primary/10 pt-4 pb-1.5 px-4 rounded-xl">
+                    <div class="bg-primary/10 pt-4 pb-1.5 px-4 rounded-xl print:rounded-none">
                         <div class="flex flex-row justify-between">
                             <h3 class="leading-none font-bold mb-0.5 inline-block font-serif text-secondary">{exp.data.title}</h3>
                         
