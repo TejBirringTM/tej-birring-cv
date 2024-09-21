@@ -19,19 +19,21 @@ const professionalExperience = (await getCollection("professional-experience")).
             {professionalExperience.map((exp)=>(
                 <div>
                     <div class="bg-primary/10 pt-4 pb-1.5 px-4 rounded-xl">
-                        <h3 class="leading-none font-bold mb-0.5 inline-block font-serif text-secondary">{exp.data.title}</h3>
+                        <div class="flex flex-row justify-between">
+                            <h3 class="leading-none font-bold mb-0.5 inline-block font-serif text-secondary">{exp.data.title}</h3>
                         
-                        <span class="text-xs bg-secondary text-white print:bg-white print:text-secondary print:border-secondary print:border rounded-full py-0.5 px-2 ml-2">
-                            { exp.data['contract type'] === 'Contractor' && 
-                                "Contract"
-                            }
-                            { exp.data['contract type'] === 'Permanent' && 
-                                "Permanent"
-                            }
-                            { exp.data['contract type'] === 'Founder' && 
-                                "Founder"
-                            }                            
-                        </span>
+                            <span class="text-xs bg-secondary text-white print:bg-white print:text-secondary print:border-secondary print:border rounded-full py-0.5 px-2 ml-2">
+                                { exp.data['contract type'] === 'Contractor' && 
+                                    "Contract"
+                                }
+                                { exp.data['contract type'] === 'Permanent' && 
+                                    "Permanent"
+                                }
+                                { exp.data['contract type'] === 'Founder' && 
+                                    "Founder"
+                                }                            
+                            </span>
+                        </div>
                         
 
                         <div class="ml-3">
